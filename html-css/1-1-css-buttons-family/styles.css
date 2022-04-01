@@ -1,0 +1,118 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Graphik,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.buttons__wrapper {
+    width: 500px;
+    margin: 16px auto;
+
+}
+
+.d-flex {
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn {
+
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 3px;
+    text-align: center;
+
+}
+
+.btn-small {
+    
+    padding: 7px 16px;
+    border: 0;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.btn-outline {
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.btn-white {
+color:white;
+
+}
+
+.btn-white {
+    color:white;
+}
+
+.btn-outline-grey {
+    color: rgb(175, 175, 175);
+    border: 2px solid rgb(175, 175, 175);
+    background-color:white;
+
+}
+
+.btn-outline-blue {
+    color: #1652f0;
+    border: 2px solid #1652f0;
+    background-color:white;
+
+}
+
+.btn-outline-green {
+    color: #14cf3c;
+    border: 2px solid #14cf3c;
+    background-color:white;
+
+}
+
+.btn-outline-orange {
+    color: #dbab2c;
+    border: 2px solid #dbab2c;
+    background-color:white;
+
+}
+
+.btn-outline-red {
+    color: #cf1414;
+    border: 2px solid #cf1414;
+    background-color:white;
+
+}
+
+.grey {
+    background: rgb(175, 175, 175); 
+}
+
+.blue {
+    background: #1652f0; 
+}
+
+.green {
+    background: #14cf3c; 
+}
+
+.orange {
+    background: #dbab2c; 
+}
+
+.red {
+    background: #cf1414; 
+}
+
+
+ 
+#grey {
+    background-color: rgb(175, 175, 175);
+    
+}
