@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+body {
+    font-family: "Vollkorn", serif;
+}
+
+.header {
+text-align: center;
+}
+
+.nav__item {
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    
+    
+}
+
+.nav__item-active {
+    background-color: black;
+    color: white;
+}
+
+.nav__item:not(.nav__item-active):hover {
+    background: gainsboro;
+    cursor: pointer;
+}
+
+.image {
+
+    width: 100%;
+}
+
+.header__article {
+ text-align:center;
+
+}
+
+.body__article {
+    position: relative;
+    align-items: center;
+    padding: 4% 25%;
+
+}
+
