@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+body {
+    font-family: "Vollkorn", serif;
+}
+
+p {
+
+    font-size: 1em;
+}
+
+ul {
+
+    font-size: 1em;
+}
+
+.header {
+text-align: center;
+}
+
+.nav__item {
+    padding: 12px;
+    color: grey;
+    text-decoration: none;
+    
+    
+}
+
+.nav__item-active {
+    background-color: black;
+    color: white;
+}
+
+.nav__item:not(.nav__item-active):hover {
+    background: gainsboro;
+    cursor: pointer;
+}
+
+.image {
+
+    width: 100%;
+}
+
+.header__article {
+ text-align:center;
+
+}
+
+.body__article {
+    position: relative;
+    align-items: center;
+    padding: 4% 20%;
+
+}
+
+.text-link {
+
+color:grey;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.card {
+
+    background-color: black;
+    color: white;
+    padding: 9px 7px 9px 7px;
+    border: none;
+    border-radius: 8px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.text-highlight {
+
+    color: yellow;
+}
+
+
+.grupo {
+
+    border-bottom: 1px solid gainsboro;
+}
+
+.grupo-imagem {
+
+    display:inline-block; 
+     width: 20%;
+
+}
+
+.grupo-texto {
+
+    display:inline-block; 
+ 
+    width: 79%;
+
+
+}
