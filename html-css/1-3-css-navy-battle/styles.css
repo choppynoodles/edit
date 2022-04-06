@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+html, body {
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.board {
+    border: 1px solid gainsboro;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.cell {
+    border: 1px dashed gainsboro;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.target {
+    background-color: gainsboro;
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background: slateblue;
+    position: absolute;
+    margin: 10px;
+    border-radius: 100%;
+}
+
+pre {
+    display: inline;
+}
+
+
+
+/* Coloca o teu CSS a partir daqui */
+.ball-0 {
+    right: 0;
+
+}
+
+.ball-1 {
+    left: 30%;
+
+}
+
+.ball-2 {
+ left: 40%;
+}
+
+.ball-3 {
+
+    left: 20%;
+
+}
+
+.ball-4 {
+
+    left: 60%;
+
+}
+
+.ball-5 {
+
+    left: 20%;
+
+}
+
+.ball-6 {
+
+    top: 40%;
+    left: 30%;
+
+}
+
+.ball-7 {
+
+    top: 60%;
+    left: 60%;
+
+}
+
+.ball-8 {
+
+    top: 20%;
+    left: 10%;
+
+}
+
+.ball-9 {
+
+    top: 20%;
+    left: 30%;
+
+}
+
+.ball-10 {
+
+}
