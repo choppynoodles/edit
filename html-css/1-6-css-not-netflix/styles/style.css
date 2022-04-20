@@ -10,19 +10,62 @@ body {
     }
 
 aside {
-    width: 25%;
-    border: 20ch;
+    width: 10%;
+    
 }
 
 main {
-    width: 100%;
+    width: 90%;
+}
+
+.menu1 {
+
+    padding: 0px, 10px;
+    border-bottom: 1px;
+    border-color: gainsboro;
+}
+
+.nav__main__menu {
+
+    padding: 10px;
+    
+}
+
+.nav__main__home {
+
+    margin: 10px;
+}
+
+.nav__main__shows {
+
+    margin: 10px;
+}
+
+.nav__main__movies {
+
+    margin: 10px;
+}
+
+.nav__main__new {
+
+    margin: 10px;
+}
+
+.nav__main__icons {
+
+    margin: 10px;
+}
+
+.thumbnails__horizontal_text {
+
+    display: flex;
 }
 
 .logo {
 
 padding: 10px;
 color: red;
-border-bottom: 3%;
+border-bottom: 3px;
 border-color: gainsboro;
 }
 
@@ -51,16 +94,19 @@ a, p, h1, h2, h3, h4, h5 {
    
  .thumbnails__vertical {
      width: 100%;
+     height: 50%;
+     margin: 20px;
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
+    overflow: auto;
 
 }
 
 .thumbnails__horizontal_images {
-    width: 100%px;
+    width: 100%;
+    margin: 10px, 0px;
     display: flex;
     justify-content: space-between;
-    Overflow: hidden;
+    Overflow: auto;
 
 }
