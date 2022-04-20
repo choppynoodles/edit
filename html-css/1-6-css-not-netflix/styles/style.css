@@ -4,16 +4,42 @@ body {
         font-family: 'Lato', sans-serif;
         background-color: black;
         display: flex;
+        width: 100%;
         
 
     }
 
 aside {
-    width: 250px;
+    width: 25%;
+    border: 20ch;
 }
 
-.splash__screen__image {
+main {
     width: 100%;
+}
+
+.logo {
+
+padding: 10px;
+color: red;
+border-bottom: 3%;
+border-color: gainsboro;
+}
+
+.nav__sidebar {
+    margin: 20px;
+    border: 3%;
+border-color: gainsboro;
+}
+
+.splash__screen__image img {
+    width: 100%;
+}
+
+.nav__main {
+
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -21,3 +47,20 @@ a, p, h1, h2, h3, h4, h5 {
     color: white;
     text-decoration: none;
     }
+
+   
+ .thumbnails__vertical {
+     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+.thumbnails__horizontal_images {
+    width: 100%px;
+    display: flex;
+    justify-content: space-between;
+    Overflow: hidden;
+
+}
