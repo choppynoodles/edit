@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,500&display=swap');
+
+
+html, body {  
+    font-family: 'Open Sans', sans-serif;  
+    background-color: #E4EDFA;
+}
+
+
+.main {
+    width: 100%;
+    
+}
+
+
+
+.card__image__user {
+    width: 40px;
+    height: 40px;
+    background-size:contain;
+    border-radius: 100%;
+    
+}
+
+.card__information {
+
+    padding: 10px;
+    background-color: white;
+}
+
+.container__text {
+
+    border-bottom: 30px;
+    border-color: grey;
+}
+
+.container__card__group {
+    display:flex;
+    
+    
+    
+}
+
+.container__card {
+    width: 350px;
+    margin: 6px;
+    background-color: #BCD1FF;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card__info {
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.card__links {
+
+    display:flex;
+    justify-content: space-between;
+}
+ 
+
+@media screen and (max-width: 768px) { 
+    
+
+
+}
+
