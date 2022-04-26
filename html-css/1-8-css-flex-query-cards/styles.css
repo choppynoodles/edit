@@ -10,9 +10,30 @@ html, body {
 .main {
     width: 100%;
     
+    
 }
 
+.container {
+width: 70%;
+padding: 100px;
 
+}
+
+h5, a, h4{
+    font-size: 11px;
+}
+
+a, h4{
+    font-weight: bold;
+}
+
+p{
+    font-size: 13px;
+}
+
+h2{
+    font-size: 20px;
+}
 
 .card__image__user {
     width: 40px;
@@ -24,7 +45,7 @@ html, body {
 
 .card__information {
 
-    padding: 10px;
+    padding: 10px 25px;
     background-color: white;
 }
 
@@ -36,14 +57,14 @@ html, body {
 
 .container__card__group {
     display:flex;
-    
+    justify-content: space-between;
     
     
 }
 
 .container__card {
-    width: 350px;
-    margin: 6px;
+    width: 318px;
+    margin: 0px 15px 0px 0px;
     background-color: #BCD1FF;
     border: none;
     border-radius: 15px;
@@ -57,12 +78,14 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 25px;
 }
 
 
 .card__info {
     display:flex;
     justify-content: space-between;
+    
 
 }
 
@@ -70,8 +93,30 @@ html, body {
 
     display:flex;
     justify-content: space-between;
+    align-content: center;
+}
+
+.card__moreinfo {
+
+    display: flex;
 }
  
+.card__link__user, h4 {
+
+    text-decoration: none;
+    color: #007AE9;
+
+}
+
+.card__user {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card__link__user {
+    margin: 0px 5px;
+}
 
 @media screen and (max-width: 768px) { 
     
