@@ -7,20 +7,21 @@ html, body {
 }
 
 
-.main {
-    width: 100%;
-    
-    
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 
 .container {
-width: 70%;
+
 padding: 100px;
 
 }
 
 h5, a, h4{
     font-size: 11px;
+    margin: 0;
 }
 
 a, h4{
@@ -29,10 +30,12 @@ a, h4{
 
 p{
     font-size: 13px;
+    margin: 0;
 }
 
 h2{
     font-size: 20px;
+    margin: 0 0 7px 0;
 }
 
 .card__image__user {
@@ -56,7 +59,7 @@ h2{
 }
 
 .container__card__group {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     
     
@@ -64,7 +67,7 @@ h2{
 
 .container__card {
     width: 318px;
-    margin: 0px 15px 0px 0px;
+    margin: 0 15px 0 0;
     background-color: #BCD1FF;
     border: none;
     border-radius: 15px;
@@ -72,6 +75,19 @@ h2{
     justify-content: center;
     flex-direction: column;
     
+}
+
+.container__card:last-child {
+    margin: 0;
+
+  }
+
+.container__title {
+    display: flex;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    border-bottom: 2px solid grey;
+    margin: 0 0 10px 0;
 }
 
 .thumbnail {
@@ -83,17 +99,19 @@ h2{
 
 
 .card__info {
-    display:flex;
+    display: flex;
     justify-content: space-between;
+    margin: 8px 0 12px 0;
+}
     
 
-}
 
 .card__links {
 
     display:flex;
     justify-content: space-between;
-    align-content: center;
+    margin: 10px 0 0 0;
+    align-items: center;
 }
 
 .card__moreinfo {
@@ -118,9 +136,60 @@ h2{
     margin: 0px 5px;
 }
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 1030px) { 
+   
     
 
+    .container__card__group {
+        flex-direction: column;
+        gap: 12px;
+    }
 
+    .container__card {
+        flex-direction: revert;
+    }
+
+    .card__user, p{
+        display: none;
+    }
+    
+    h2:first-child {
+
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .container__card {
+        width: 405px;
+    }
+
+    .card__links {
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    justify-items: flex-end;
+
+    }
+
+    .container {
+
+        padding: 10px 100px;
+        
+        }
+
+        .thumbnail {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .card__information {
+
+            padding: 10px 15px 0px 15px;
+            background-color: white;
+        }
+            
 }
 
