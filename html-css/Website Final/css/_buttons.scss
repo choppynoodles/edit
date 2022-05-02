@@ -1,0 +1,32 @@
+.nav__btn {
+    padding: 12px 16px;
+    background-color: transparent;
+    border-radius: 2px;
+    border: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+
+    // estilos 
+    &--rounded {
+        border-radius: 48px;
+    }
+    
+    // cores
+    &--black {
+        background: black;
+        color: white;
+    }
+    &--blue {
+        background: blue;
+        color: white;
+    }
+
+
+}
+
+
+
+

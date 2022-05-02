@@ -1,0 +1,38 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+@import 'buttons';
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    font-size: 10px;
+}
+
+a {
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 18px 25px;
+    border-bottom: 1px solid #DFDFDF;
+&__main {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    .nav__logo {
+        margin: 0 50px 0 0;
+    }
+    .nav__menu {
+        &__links {
+            color: black;
+            margin: 0 30px 0 0;
+        }
+    }
+}
+}
