@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
+
 }
 
 p {
@@ -21,18 +22,38 @@ nav {
     justify-content: space-between;
     padding: 18px 25px;
     border-bottom: 1px solid #DFDFDF;
-&__main {
+
+}
+.nav__main {
     display: flex;
     align-items: center;
     align-content: center;
-    .nav__logo {
-        margin: 0 50px 0 0;
-    }
-    .nav__menu {
-        &__links {
-            color: black;
-            margin: 0 30px 0 0;
-        }
+
+}
+
+.nav__logo {
+    margin: 0 50px 0 0;
+
+}
+
+.nav__menu {
+    &__links {
+        color: black;
+        margin: 0 30px 0 0;
     }
 }
+
+main {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+
+
+
+    
 }
+
