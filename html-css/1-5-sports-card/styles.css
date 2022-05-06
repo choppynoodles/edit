@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+body {
+
+    width: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+    background: rgb(255,0,0);
+    background: linear-gradient(103deg, rgba(255,0,0,1) 0%, rgba(0,18,255,1) 100%);
+    color: white;
+
+}
+
+
+
+main {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.container {
+
+    border-radius: 20px;
+    margin: 20px;
+    width: 27%;
+    background: rgb(215,39,0);
+    background: linear-gradient(73deg, rgba(215,39,0,1) 0%, rgba(255,204,91,1) 100%);
+    box-shadow: rgba(0, 26, 255, 0.35) 0px 5px 15px;
+  
+}
+
+.bg--orange {
+
+    margin: 20px 20px 0 20px;
+}
+
+
+.bg--white {
+
+    width: 100%;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    padding: 30px 0 0 0;
+
+}
+
+.container__splash__image {
+
+    position: absolute;
+    bottom: 70px;
+    animation: rotation 4s infinite linear;
+
+    
+}
+
+@keyframes rotation {
+    0% {
+      transform: rotate(-10deg);
+    }
+
+    50% {
+      transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+  }
+
+.splash__image {
+
+    width: 400px;
+}
+
+.container__header {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__content__title {
+
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+
+.container__content__text {
+
+    font-size: 13px; 
+}
+
+.container__content__splash__text {
+
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    letter-spacing: 10px;
+    font-size: 240px;
+    overflow: hidden;
+    margin: -10% 0 0 0;
+    color: rgba(255,255,255,0.5)
+
+}
+
+.container__footer {
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.footer__text {
+
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: rgb(168, 168, 168);
+    padding: 20px;
+}
+
+.button {
+
+    color: blue;
+    border: 2px solid blue;
+    border-radius: 25px;
+    padding: 10px 40px;
+    font-weight: 500;
+    background-color: white;
+}
