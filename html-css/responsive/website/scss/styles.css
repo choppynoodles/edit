@@ -1,0 +1,295 @@
+/* colors */
+/* sizes */
+/* grid */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap");
+body {
+  background-color: #121212;
+  width: 100%;
+}
+
+main {
+  font-family: "Roboto Mono", monospace;
+  color: #FFFFFF;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  z-index: 1;
+}
+
+.background {
+  background-image: url("/assets/as1orb74 1 (1).png");
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #232323;
+  height: 100vh;
+}
+.menu__default {
+  margin: 40px 0 0 40px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+.menu__active {
+  color: #D27979;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.header {
+  background-color: rgba(35, 35, 35, 0.6);
+  padding: 53px 40px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.header__text {
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.header__nav {
+  width: 10px;
+  background-color: #FFFFFF;
+}
+
+.home__text {
+  position: absolute;
+  bottom: 10%;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 0 0 20px;
+  z-index: 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.gridrow {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+}
+@media (min-width: 960px) {
+  .gridrow {
+    width: 920px;
+  }
+}
+
+.gridrow {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gridrow .col {
+  flex: 1;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.gridrow .col-1 {
+  box-sizing: border-box;
+  width: 16.6666666667%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.gridrow .offset-1 {
+  margin-left: 16.6666666667%;
+}
+.gridrow .col-2 {
+  box-sizing: border-box;
+  width: 33.3333333333%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.gridrow .offset-2 {
+  margin-left: 33.3333333333%;
+}
+.gridrow .col-3 {
+  box-sizing: border-box;
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.gridrow .offset-3 {
+  margin-left: 50%;
+}
+.gridrow .col-4 {
+  box-sizing: border-box;
+  width: 66.6666666667%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.gridrow .offset-4 {
+  margin-left: 66.6666666667%;
+}
+.gridrow .col-5 {
+  box-sizing: border-box;
+  width: 83.3333333333%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.gridrow .offset-5 {
+  margin-left: 83.3333333333%;
+}
+.gridrow .col-6 {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.gridrow .offset-6 {
+  margin-left: 100%;
+}
+@media (min-width: 960px) {
+  .gridrow .col-d {
+    flex: 1;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .gridrow .offset-d {
+    margin-left: 0;
+  }
+  .gridrow .col-d-1 {
+    box-sizing: border-box;
+    width: 16.6666666667%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .gridrow .offset-d-1 {
+    margin-left: 16.6666666667%;
+  }
+  .gridrow .col-d-2 {
+    box-sizing: border-box;
+    width: 33.3333333333%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .gridrow .offset-d-2 {
+    margin-left: 33.3333333333%;
+  }
+  .gridrow .col-d-3 {
+    box-sizing: border-box;
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .gridrow .offset-d-3 {
+    margin-left: 50%;
+  }
+  .gridrow .col-d-4 {
+    box-sizing: border-box;
+    width: 66.6666666667%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .gridrow .offset-d-4 {
+    margin-left: 66.6666666667%;
+  }
+  .gridrow .col-d-5 {
+    box-sizing: border-box;
+    width: 83.3333333333%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .gridrow .offset-d-5 {
+    margin-left: 83.3333333333%;
+  }
+  .gridrow .col-d-6 {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .gridrow .offset-d-6 {
+    margin-left: 100%;
+  }
+}
+.gridrow.nogutter .col, .gridrow.nogutter .col-d {
+  padding: 0;
+}
+.gridrow.nogutter .col-1, .gridrow.nogutter .col-d-1 {
+  padding: 0;
+}
+.gridrow.nogutter .col-2, .gridrow.nogutter .col-d-2 {
+  padding: 0;
+}
+.gridrow.nogutter .col-3, .gridrow.nogutter .col-d-3 {
+  padding: 0;
+}
+.gridrow.nogutter .col-4, .gridrow.nogutter .col-d-4 {
+  padding: 0;
+}
+.gridrow.nogutter .col-5, .gridrow.nogutter .col-d-5 {
+  padding: 0;
+}
+.gridrow.nogutter .col-6, .gridrow.nogutter .col-d-6 {
+  padding: 0;
+}/*# sourceMappingURL=styles.css.map */
