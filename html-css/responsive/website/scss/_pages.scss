@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+body {
+    background-color: $background-dark;
+    width: 100%;
+
+}
+
+a {
+    text-decoration: none;
+    color: $secondary-color;
+    font-size: 16px;
+}
+
+main {
+    font-family: "Roboto Mono", monospace;
+    color: $secondary-color;
+    position: relative;
+    width: 100%;
+    height:100vh;
+
+  
+}
+
+
+.background {
+    background-image: url("/assets/as1orb74\ 1\ \(1\).png");
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    top: 0;
+
+
+}
+
+
+
+.menu_default {
+    font-size: 36px;
+    font-weight: 700;
+    color: $secondary-color;
+    padding-bottom: 40px;
+    
+}
+
+.menu__active {
+    color: $primary-color;
+}
+
+
+.header {
+    background-color: rgba($background, 0.6);
+    padding: 53px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    position: sticky;
+    top: 0;
+
+}
+
+.nav-container {
+    display: block;
+    position: relative;
+    height: 30px;
+  }
+  
+  .nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 50px;
+    right: 40px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+.nav-container .header__text {
+    text-decoration: none;
+    font-family: "Roboto Mono", monospace;
+    color: $secondary-color;
+    font-size: 16px;
+    font-weight: 700;
+    z-index: 2;
+    
+}
+  
+  .nav-container .hamburger-lines {
+    display: flex;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .nav-container .header__text {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    z-index: 2;
+
+  }
+  
+  .nav-container .hamburger-lines .line {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: $secondary-color;
+  }
+  
+  .nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .navbar .menu-items {
+    background-color: $background;
+    height: 100vh;
+    width: 100%;
+    transform: translate(0%, -150%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.7s ease-in-out;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    ul {
+        width: $gridwidth;
+    margin: 0 auto;
+
+    @media(min-width: $desktop){
+        width: $gridwidthd;
+    }
+    }
+  }
+  
+  .navbar .menu-items li {
+    margin-left: 30px;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 700;
+  }
+  
+
+  
+  .nav-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+  
+  
+  .navbar .nav-container li {
+    list-style: none;
+  }
+
+
+
+
+
+.home__text {
+    position: absolute;
+    bottom: 10%;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0 0 0 20px;
+    z-index: -3;
+    
+}

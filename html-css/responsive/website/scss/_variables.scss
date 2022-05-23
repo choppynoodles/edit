@@ -1,0 +1,23 @@
+/* colors */
+
+$primary-color: #D27979;
+$secondary-color: #FFFFFF;
+$background: #232323;
+$background-dark: #121212;
+
+/* sizes */
+
+$desktop: 960px;
+
+/* grid */
+
+$gridgutter: 20px;
+$gridcolumns: 6;
+
+$gridwidth: calc(100% - #{$gridgutter});
+$gridwidthd: $desktop - $gridgutter * 2;
+
+
+
+
+
