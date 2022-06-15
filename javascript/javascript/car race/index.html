@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Exercise</title>
+    <style>
+        div {
+          width: 50px;
+          height: 50px;
+          display: inline-block;
+        }
+        .brown{
+          background-color: brown;
+        }
+        .green{
+          background-color: green;
+        }
+        .blue{
+          background-color: blue;
+        }
+        .purple{
+          background-color: purple;
+        }
+        .yellow{
+          background-color: yellow;
+        }
+        .car1 {
+         background-color: #8C9C12;
+        }
+        .car2 {
+         background-color: #1DA788;
+        }
+        .car1, .car2 {
+            margin-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="change_heading">Change Me!</h1>
+    SELECTED COLOR <span class="selected">None!</span>
+    <section>
+        <div class="brown"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+    </section>
+    <h2>Race!</h2>
+    <button id="race">Start the race!</button>
+    <br>
+    <div class="car1"></div>
+    <br>
+    <div class="car2"></div>
+    <br />
+    <h1>Exercise</h1>
+    <h2>Part 1</h2>
+​
+    <ol>
+    <li><p>Add the necessary code to wait for the DOM to load to make sure that anything you manipulate in the DOM has loaded. You can do this either using <code>window.onload</code> or adding an event listener for <code>DOMContentLoaded</code>.</p></li>
+    <li><p>Replace the text &quot;Change me&quot; with &quot;Hello World!&quot;.</p></li>
+    <li><p>When a user hovers over one of the colored boxes change the text to display the color that is being hovered over.</p></li>
+    <li><p>Create a new <code>div</code> element.</p></li>
+    <li><p>Give your new <code>div</code> a class of <code>purple</code> and style it so that it has a background color of purple. </p></li>
+    <li><p>Append your new <code>div</code> to the page to the <code>section</code> tag.</p></li>
+    </ol>
+​
+    <h2>Part 2</h2>
+​
+    <p>Create a racing game with the two cars. When the race button is pressed, the two cars should move across the screen until one of them is at the end of the screen. When one of the blocks reaches the end - you should alert &quot;winner!&quot;</p>
+​
+    <h2>Part 3</h2>
+​
+    <p>For this assignment you will be combining your knowledge of DOM access and events to build a todo app!</p>
+​
+    <p>As a user, you should be able to:</p>
+​
+    <ul>
+    <li>Add a new todo (by submitting a form)</li>
+    <li>Mark a todo as completed (cross out the text of the todo)</li>
+    <li>Remove a todo</li>
+    </ul>
+​
+    <h2>Part 4:</h2>
+​
+    <p>Using localStorage, try to store your todos so that if you refresh the page you do not lose what you have added to the list! As a super bonus, try to also save todos that you have marked as complete!</p>
+    <script>
+        document.addEventListener('DOMContentLoaded', 
+        function(){
+        
+        document.getElementById("change_heading").innerText = "Hello World!";
+
+        var hoverText  = document.getElementsByClassName('selected')[0];
+        var hoverBrown = document.getElementsByClassName('brown')[0];
+        var hoverGreen = document.getElementsByClassName('green')[0];
+        var hoverBlue = document.getElementsByClassName('blue')[0];
+        var hoverYellow = document.getElementsByClassName('yellow')[0];
+        
+
+        
+        hoverBrown.addEventListener('mouseover', function handleMouseOver() {
+        hoverText.innerText = 'Brown';
+        });
+
+        hoverBrown.addEventListener('mouseout', function handleMouseOut() {
+        hoverText.innerText = 'None!';
+        });
+
+        hoverGreen.addEventListener('mouseover', function handleMouseOver() {
+        hoverText.innerText = 'Green';
+        });
+
+        hoverGreen.addEventListener('mouseout', function handleMouseOut() {
+        hoverText.innerText = 'None!';
+        });
+
+        hoverBlue.addEventListener('mouseover', function handleMouseOver() {
+        hoverText.innerText = 'Blue';
+        });
+
+        hoverBlue.addEventListener('mouseout', function handleMouseOut() {
+        hoverText.innerText = 'None!';
+        });
+
+        hoverYellow.addEventListener('mouseover', function handleMouseOver() {
+        hoverText.innerText = 'Yellow';
+        });
+
+        hoverYellow.addEventListener('mouseout', function handleMouseOut() {
+        hoverText.innerText = 'None!';
+        });
+
+        
+        let div = document.createElement("div");
+        div.className = "purple";
+        div.style = "background-color: purple";
+        div.style.width = "50px";
+        div.style.height = "50px";
+        document.body.appendChild(div);
+        document.getElementsByTagName('section')[0].appendChild(div);
+
+        var hoverPurple = document.getElementsByClassName('purple')[0];
+
+        hoverPurple.addEventListener('mouseover', function handleMouseOver() {
+        hoverText.innerText = 'Purple';
+        });
+
+        hoverPurple.addEventListener('mouseout', function handleMouseOut() {
+        hoverText.innerText = 'None!';
+        });
+
+    
+    });
+        
+    </script>
+
+</body>
+</html>
