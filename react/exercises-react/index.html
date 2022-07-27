@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React App</title>
+  </head>
+  <body>
+​
+    <h2>React skeleton</h2>
+​
+    <!-- We will put our React component inside this div. -->
+    <div id="container1"></div>
+    <div id="container2"></div>
+    <div id="container3"></div>
+    <div id="container4"></div>
+​
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js" crossorigin></script>
+​
+    <script type="text/babel">
+
+    //exercise1
+
+    const titleExercise1 = React.createElement("h1", null, "Hello World");
+    const div1 = React.createElement("div", null, titleExercise1);
+
+
+    //exercise2
+
+    const ilExercise1 = ["One", "Two", "Three", "Four", "Five"]
+    const ulExercise2 = React.createElement("ul", null, ilExercise1.map(num2 => React.createElement("li", null, num2)) )
+    const div2 = React.createElement("div", null, ulExercise2);
+
+    //exercise3
+
+    const ilChild1Exercise3 = ["One one", "One two"]
+    const ilChild2Exercise3 = ["Two one", "Two two"]
+    const ulChild1Exercise3 = React.createElement("ul", null, ilChild1Exercise3.map(num3 => React.createElement("li", null, num3)) )
+    const ulChild2Exercise3 = React.createElement("ul", null, ilChild2Exercise3.map(num33 => React.createElement("li", null, num33)) )
+    const ilParent1Exercise3 = React.createElement("il", null, ulChild1Exercise3 )
+    const ilParent2Exercise3 = React.createElement("il", null, ulChild2Exercise3 )
+    const ulParentExercise3 = React.createElement("ul",{ className: "first_ul" },ilParent1Exercise3, ilParent2Exercise3)
+    const div3 = React.createElement("div",{ id: "parent_id", className: "parent_div"}, ulParentExercise3)
+
+
+    ReactDOM.render(div1,document.getElementById('container1'))
+    ReactDOM.render(div2,document.getElementById('container2'))
+    ReactDOM.render(div3,document.getElementById('container3'))
+    //ReactDOM.render(div4,document.getElementById('container4'))
+    
+
+    </script>
+​
+  </body>
+</html>
