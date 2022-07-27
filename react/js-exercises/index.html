@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //# 1. Conditional
+        const myConditional = (num) => {
+            if (num < 5) {
+                return num + 2
+            }
+            else {
+                return num + 3
+            }
+        }
+        const result1 = myConditional(7);
+        console.log(result1);
+
+        //# 2. Fizzbuzz
+        const fizzbuzz = (num) => {
+            if ((num % 3 === 0) && (num % 5 === 0)) {
+                return 'fizzbuzz'
+            }
+            else if (num % 3 === 0) {
+                return 'fizz'
+            }
+            else if (num % 5 === 0) {
+                return 'buzz'
+            }
+            else {
+                return 'you fucked'
+            }
+        }
+
+        const result2 = fizzbuzz(15);
+        console.log(result2)
+
+        //# 3. Strings
+        const str = (randomString) => {
+            if (randomString.startsWith('ab')){
+                return randomString
+            } else {
+                return 'ab'+randomString
+            }
+        }
+        const result3 = str('kdsjdj');
+        console.log(result3)
+
+        /* 
+        const str = (randomString) => {
+            if (randomString[0] === 'a' && randomString[1] === 'b'){
+                return randomString
+            } else {
+                return 'ab'+randomString
+            }
+        }
+        const result3 = str('kdsjdj');
+        console.log(result3)
+        
+        */
+
+
+        //# 4. Salaries
+        const salaries = [1750, 2633, 3524, 1544];
+
+        function newSalaries(percentage) {
+        return num * 10;
+        }
+        percentage = 60;
+        const mapSalaries = salaries.map((salaries/100) * percentage);
+
+
+        console.log(mapSalaries);
+
+        const numbers = [65, 44, 12, 4];
+const newArr = numbers.map(myFunction)
+
+function myFunction(num) {
+  return num * 10;
+}
+
+    </script>
+</body>
+</html>
